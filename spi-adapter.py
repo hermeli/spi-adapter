@@ -65,8 +65,7 @@ time.sleep(0.01)
 
 # GET_INPUT command (function fails with program exit!)
 ans = SendCmd(CMD_GETVERSION)
-print "Attiny firmware version is: %02X." % ans[-3], 
-print "%02X" % ans[-2]
+print "Attiny firmware version is: %02X.%02X" % (ans[-3], ans[-2])
 
 while True:
 	
